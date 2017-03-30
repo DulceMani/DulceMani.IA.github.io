@@ -1,0 +1,10 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.circulo{
+    background-color: purple;
+    padding: 20px;
+    width: 50px;
+    height: 50px; 
+    border-radius:100px;
+}
