@@ -1,11 +1,23 @@
 $(document).ready(function(){
-    var columnas = 10;
-    var renglones = 10;
+    var columnas = 5;
+    var renglones = 5;
     var index = 0;
     var j,i
-
+   //var $img = $('<img id="theCat"  src="Sr._Gato.png" />')
     creaMatriz()
-
+    agrega_al_gatito()
+    function agrega_al_gatito()
+    {
+        var x= renglones/2;
+        var y= columnas/2;
+        x= parseInt(x);
+        y= parseInt(y);
+        var idc = '#'+x+'c'+y;
+        //var div=  document.getElementById(idc).children[0]
+        //div.innerHTML= $img
+        var $div = $(idc).children('div')
+        $div.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'}));
+    }
     function creaMatriz(){
         for(i=0;i<renglones;i++)
         {
@@ -45,4 +57,15 @@ $(document).ready(function(){
         $('div').addClass('circulo');
         
     }
+    $(function(){
+        $('.circulo').click(function(){
+            
+            var $img= $(this).children('img');
+            var idc = $img.attr('id')
+            if(idc != 'theCat')
+            {
+                $(this).css('background-color','blue');
+            }
+        })
+      })
 })

@@ -3,10 +3,34 @@
 }
 .circulo{
     background-color: purple;
-    padding: 20px;
-    width: 20px;
-    height: 20px;
+    
+    width: 60px;
+    height: 60px;
     display: inline-block;
     /*margin:auto;*/
     border-radius:100px;
+    /*position: relative*/
+    overflow: hidden;
+    text-align: center;
+}
+#theCat{
+    /*position: absolute;*/
+    z-index: 100;
+    height:40px;
+    width:40px;
+    margin-top: 10px;
+}
+.encabezado {
+    width: 100%;
+    border: 0px;
+    margin-top: 0px;
+    background-color: purple;
+    
+}
+h1 {
+    text-align: center;
+    color: lawngreen;
+}
+#tabla{
+    margin: 0 auto;
 }
