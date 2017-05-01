@@ -102,6 +102,7 @@ $(document).ready(function(){
     }
 
     function turnoCat(){
+       
        var Dire;
        var idO;
        var $div1;
@@ -110,8 +111,11 @@ $(document).ready(function(){
        var co;
        var Cor;
        
-    
+            
+            do{
+            
             Dire=getAleatorio();
+            //alert(Dire);
             
             if(Dire==1){
                     Cor=x;
@@ -148,7 +152,7 @@ $(document).ready(function(){
                         actualizacion(Dire)
                     } 
                     
-            }
+                }
 
                 if(Dire==3){
                     Cor=y;
@@ -166,7 +170,7 @@ $(document).ready(function(){
                         actualizacion(Dire)
                     } 
                     
-            }
+                }
 
                 if(Dire==4){
                     Cor=y;
@@ -183,9 +187,9 @@ $(document).ready(function(){
                         actualizacion(Dire) 
                     } 
                     
-            }
-       
-
+               }
+          
+            }while(co=='blue');
     }
 
     $(function(){
