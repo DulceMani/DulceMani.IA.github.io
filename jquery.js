@@ -113,6 +113,7 @@ $(document).ready(function(){
        
             
             do{
+
             
             Dire=getAleatorio();
             //alert(Dire);
@@ -124,10 +125,10 @@ $(document).ready(function(){
                     idN='#'+x+'c'+y;
                     $div1= $(idO).children('div');
                     co = ($div1).css('backgroundColor');
-        
+                 
                     
 
-                    if(co='purple'){  
+                    if(co=="rgb(128, 0, 128)"){  
                         //$div2= $(idN).children('div')
                         $("#theCat").remove()
                         $div1.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'})); 
@@ -145,7 +146,7 @@ $(document).ready(function(){
                     co = ($div1).css('backgroundColor');
                   
 
-                    if(co='purple'){  
+                    if(co=="rgb(128, 0, 128)"){  
                         //$div2= $(idN).children('div')
                         $("#theCat").remove()
                         $div1.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'})); 
@@ -163,7 +164,7 @@ $(document).ready(function(){
                     co = ($div1).css('backgroundColor');
         
 
-                    if(co='purple'){  
+                    if(co=="rgb(128, 0, 128)"){  
                         //$div2= $(idN).children('div')
                         $("#theCat").remove()
                         $div1.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'})); 
@@ -171,7 +172,7 @@ $(document).ready(function(){
                     } 
                     
                 }
-
+      
                 if(Dire==4){
                     Cor=y;
                     Cor++;
@@ -180,16 +181,17 @@ $(document).ready(function(){
                     $div1= $(idO).children('div');
                     co = ($div1).css('backgroundColor');
 
-                    if(co='purple'){  
+                    if(co=="rgb(128, 0, 128)"){  
                         //$div2= $(idN).children('div')
                         $("#theCat").remove()
-                        $div1.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'}));
-                        actualizacion(Dire) 
+                          $div1.prepend($('<img>',{id:'theCat',src:'Sr._Gato.png'}));
+                          actualizacion(Dire) 
+                        
                     } 
                     
                }
           
-            }while(co=='blue');
+            }while(co=="rgb(0, 0, 255)");
     }
 
     $(function(){
