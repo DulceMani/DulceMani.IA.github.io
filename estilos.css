@@ -1,5 +1,9 @@
 *{
+    /*background-image: url("tela-gatos.jpg");*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url("tela-gatos.jpg");
 }
 .circulo{
     background-color: purple;
@@ -31,5 +35,11 @@ h1 {
     color: lawngreen;
 }
 #tabla{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    /*background-color:#651923;*/
 }
