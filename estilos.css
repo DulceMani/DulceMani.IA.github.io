@@ -7,8 +7,8 @@ body{
 }
 .circulo{
     background-color: purple;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     /*margin:auto;*/
     border-radius:100px;
@@ -19,9 +19,11 @@ body{
 #theCat{
     /*position: absolute;*/
     z-index: 100;
-    height:40px;
-    width:40px;
-    margin-top: 10px;
+    /*height:40px;
+    width:40px;*/
+    height:80%;
+    width:80%;
+    /*margin-top: 10px;*/
 }
 .encabezado {
     width: 100%;
@@ -32,7 +34,9 @@ body{
 }
 h1 {
     text-align: center;
-    color: lawngreen;
+    color: orangered;
+    font-size: 90px;
+    /*color: lawngreen;*/
 }
 #tabla{
     /*margin: 0 auto;*/
@@ -42,4 +46,36 @@ h1 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     /*background-color:#651923;*/
+}
+.perdiste{
+    background-color: rgba(102, 204, 0, 0.9);
+    text-align: center;
+    z-index: 100;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    border-radius: 30px;
+    
+    display: none;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.boton{
+    /*float: left;*/
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
+.contP{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: rgba(102, 204, 0, 0);
+    /*overflow: hidden;*/
+    /*background-color: none;*/
 }
