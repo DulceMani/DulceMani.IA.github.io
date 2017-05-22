@@ -6,43 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery-3.1.1.min.js"></script>
     <link rel="icon" type="image/png" href="Sr._Gato.png" />
-    <title>Cat Traps</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="jquery.js"></script>
+    <!--<script src="jquery.js"></script>-->
 </head>
 <body>
-    <!--<canvas width="480" height="320"> </canvas>-->
-    <!--<div class="encabezado"> <h1>Cat Traps</h1>  </div>-->
-   
-    <table id="tabla">
+    <script type="text/javascript">
+ 
+ function abrirHijo() {
+ window.open("juego.html"); 
+ }
+ 
+ </script>
+     <div class="menu">
+        <h1>Cat Traps</h1>
+        <img src="Sr._Gato1.png" alt="Senor gato" width="40%">
+        <br>
+        <button class="boton1">Nivel 1</button>
+        <button class="boton1">Nivel 2</button>
+        <button class="boton1">Nivel 3</button>
+        <br>
+            <p>Numero de obstaculos</p>
+            <input type="number" id="obst">
+            <br><br>
         
-        <tr id="r0">
-            <td id="0c0"><div class="circulo" id="c1" ></div></td>
-        </tr>
-    
-    </table>
-    <audio preload>
-        <source src="gato_maullido.mp3" type="audio/mp3">
-        <source src="gato_maullido.ogg" type="audio/ogg">            
-    </audio>
-    <audio preload>
-        <source src="mp3gato1.mp3" type="audio/mp3">
-        <source src="mp3gato1.ogg" type="audio/ogg">            
-    </audio>
-    <div class="perdiste">
-        <div class="contP">
-            <h1>Perdiste</h1>
-            <!--<button class="boton">Juego Nuevo</button>-->
-        </div>
-        
+        <button onclick="abrirHijo();" class="boton2">Jugar</button>
+            
     </div>
-   <!-- <script>
-      $(function(){
-        $('.circulo').click(function(){
-            $(this).css('background-color','blue');
-        
-        })
-      })
-    </script>-->
+  
 </body>
 </html>

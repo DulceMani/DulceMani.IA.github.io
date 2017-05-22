@@ -5,6 +5,9 @@
 body{
     background-image: url("tela-gatos.jpg");
 }
+#cont{
+    text-align: center;
+}
 .circulo{
     background-color: purple;
     width: 50px;
@@ -39,12 +42,14 @@ h1 {
     /*color: lawngreen;*/
 }
 #tabla{
-    /*margin: 0 auto;*/
-    position: absolute;
-    left: 50%;
+   
+    /*display: none;*/
+     margin: 0 auto;
+    /*position: absolute;*/
+    /*left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);*/
     /*background-color:#651923;*/
 }
 .perdiste{
@@ -78,4 +83,25 @@ h1 {
     background-color: rgba(102, 204, 0, 0);
     /*overflow: hidden;*/
     /*background-color: none;*/
+}
+.menu{
+    background-color: rgba(30, 242, 159,0.8);
+    border-radius: 30px;
+    width: 50%;
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+.boton1{
+    border-radius: 10px;
+    background-color: purple;
+}
+.boton2{
+    border-radius: 10px;
+    background-color: orange;
+}
+body{
+    background-image: url("tela-gatos.jpg");
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }

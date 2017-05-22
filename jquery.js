@@ -9,12 +9,12 @@ $(document).ready(function(){
     var arriba = false;
     var derecha = false;
     var HV = false;
-    var numObs = 9;
+    var bandj=false;    
+
    //var $img = $('<img id="theCat"  src="Sr._Gato.png" />')
-    creaMatriz()
-    creaMatriz_Num()
-    pon_obstaculos(numObs)
-    agrega_al_gatito()
+   
+   
+   
     function agrega_al_gatito()
     {   
         var idcIni; 
@@ -63,8 +63,11 @@ $(document).ready(function(){
         $(cid).after($td)
         var newid = i+'c'+(j+1)
         $td.attr('id',newid)
-        $td.append('<div>')
-        $('div').addClass('circulo');
+        $div = $('<div class="circulo"></div>')
+        $td.append($div)
+        //$div.addClass('circulo');
+        //document.getElementById(newid).children[0].onclick = "circuloClick()";
+        //$div.onclick = "circuloClick()";
         
     }
     function agregaRenglon(i,j){
@@ -82,8 +85,10 @@ $(document).ready(function(){
         $tr.append($td)
         var newid = (i+1)+'c'+j
         $td.attr('id',newid)
-        $td.append('<div>')
-        $('div').addClass('circulo');
+        $div = $('<div class="circulo"></div>')
+        $td.append($div)
+        
+        //$('div').addClass('circulo');
         
     }
 
@@ -300,7 +305,30 @@ $(document).ready(function(){
         }
         
     }
-    $(function(){
+   
+         var numObs = $('.obst').val();
+            $('.menu').remove();     
+            creaMatriz()
+            creaMatriz_Num()
+            pon_obstaculos(parseInt(numObs))
+            agrega_al_gatito()   
+    
+//    function circuloClick(){
+//        var $img= $(this).children('img');
+//             var idc = $img.attr('id')
+
+//             var idp = $(this).parent().attr('id');
+//             var ym = idp.substring(0,1);
+//             var xm = idp.substring(2);
+//             matriz[parseInt(ym)][parseInt(xm)] = 1;
+
+//             if(idc != 'theCat')
+//             {
+//                 $(this).css('background-color','blue')
+//                  turnoCat();
+//             }
+//    }
+    // $(function(){
         $('.circulo').click(function(){
              
             var $img= $(this).children('img');
@@ -317,8 +345,6 @@ $(document).ready(function(){
                  turnoCat();
             }
         })
-      })
-      $('.boton').click(function(){
-          
-      })
+    //   })
+     
 })
