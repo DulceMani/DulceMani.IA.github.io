@@ -21,16 +21,15 @@
      <div class="menu">
         <h1>Cat Traps</h1>
         <img src="Sr._Gato1.png" alt="Senor gato" width="40%">
-        <br>
-        <button class="boton1">Nivel 1</button>
-        <button class="boton1">Nivel 2</button>
-        <button class="boton1">Nivel 3</button>
-        <br>
-            <p>Numero de obstaculos</p>
-            <input type="number" id="obst">
-            <br><br>
         
-        <button onclick="abrirHijo();" class="boton2">Jugar</button>
+        <form method="POST">
+            <p>Tamaño de la malla</p>
+            <input type="number" id="tamM">
+            <p>Numero de obstaculos</p>
+            <input type="number" id="obst"><br>
+            <input type="submit" value="Jugar" class="boton2">
+        </form>
+        <!--<button onclick="abrirHijo();" class="boton2">Jugar</button>-->
             
     </div>
   
