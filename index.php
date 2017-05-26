@@ -22,11 +22,11 @@
         <h1>Cat Traps</h1>
         <img src="Sr._Gato1.png" alt="Senor gato" width="40%">
         
-        <form method="POST">
+        <form method="POST" action="juego.php" >
             <p>Tamaño de la malla</p>
-            <input type="number" id="tamM">
+            <input type="number" id="tamM" name="tamM">
             <p>Numero de obstaculos</p>
-            <input type="number" id="obst"><br>
+            <input type="number" id="obst" name="obst"><br>
             <input type="submit" value="Jugar" class="boton2">
         </form>
         <!--<button onclick="abrirHijo();" class="boton2">Jugar</button>-->

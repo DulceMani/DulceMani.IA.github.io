@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    var columnas = 9;
-    var renglones = 9;
+    var columnas = $('#maya').val();
+    var renglones =  $('#maya').val();
     var index = 0;
     var j,i;
     var x= renglones/2;
@@ -45,18 +45,19 @@ $(document).ready(function(){
         } 
     }
     function pon_obstaculos(numObs){
+        //alert('numObst:'+numObs);
         for(i=0;i<numObs;i++){
             do{
                 var xobs=Math.floor((Math.random() * (renglones-1)))
                 var yobs=Math.floor((Math.random() * (renglones-1)))
-            }while(xobs == parseInt(columnas/2) || yobs == parseInt(columnas/2));
+            }while((xobs == parseInt(columnas/2) && yobs == parseInt(columnas/2) )||(xobs<0 && xobs>=renglones && yobs<0 && yobs>=renglones);
         
             matriz[yobs][xobs]=1;
             var idO='#'+yobs+'c'+xobs;
             var $div1= $(idO).children('div');
             $div1.css('background-color','blue')
         }
-    }
+    } 
     function agregaColumna(i,j){
         var cid = '#'+i+'c'+j;
         var $td = $('<td>')
@@ -119,6 +120,7 @@ $(document).ready(function(){
         }
 
         if(x == columnas-1 || y == renglones-1 || x==0 ||y==0){
+            var m=matriz[y][x];
             cambia_gato(true);
            perdiste();
        }
@@ -306,10 +308,13 @@ $(document).ready(function(){
         
     }
    
-         var numObs = $('.obst').val();
-            $('.menu').remove();     
+         
+           // $('.menu').remove();     
             creaMatriz()
             creaMatriz_Num()
+            //do{
+                var numObs = $('#num').val();
+           // }while(numObs!=NaN);
             pon_obstaculos(parseInt(numObs))
             agrega_al_gatito()   
     

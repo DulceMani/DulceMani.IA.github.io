@@ -15,12 +15,6 @@
     <!--<canvas width="480" height="320"> </canvas>-->
     <!--<div class="encabezado"> <h1>Cat Traps</h1>  </div>-->
 
-      <script>
-        var el = window.opener.document.getElementById('obst').value;
-     window.document.getElementById('num').value= el; 
- 
-      </script>
-
     <table id="tabla">
         
         <tr id="r0">
@@ -28,7 +22,8 @@
         </tr>
     
     </table> 
-    <input type="number" id="num">
+    <input type="number" value="<?php echo $_POST['obst'];?>" id="num" >
+    <input type="number" value="<?php echo $_POST['tamM'];?>" id="maya" >
     <audio preload>
         <source src="gato_maullido.mp3" type="audio/mp3">
         <source src="gato_maullido.ogg" type="audio/ogg">            
@@ -52,5 +47,14 @@
         })
       })
     </script>-->
+
+        <!--<script src="jquery.js"></script>-->
+        
 </body>
 </html>
+<?php 
+    if($_POST){
+         $_POST['tamM'];
+         $_POST['obst'];
+    }
+?> 
